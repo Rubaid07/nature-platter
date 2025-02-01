@@ -18,6 +18,22 @@
         .sora {
             font-family: "Sora", serif;
         }
+
+        .animate1 {
+            animation: bounce2 2s infinite ease-in-out;
+        }
+
+        @keyframes bounce2 {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(6px);
+            }
+        }
     </style>
     <!-- script -->
     <script>
@@ -80,8 +96,12 @@
         </div>
         <!-- banner -->
         <div class="mt-14">
-            <h1 class="text-[32px] lg:text-5xl font-semibold text-center">Freshness You <span class="text-accent"> Can
-                    <br>Count</span> On, Prices You'll Love!</h1>
+            <h1 class="text-[32px] lg:text-5xl font-semibold text-center">Freshness You <span
+                    class="text-accent">
+                    <h1 class="animate1 inline-block text-green-700">C</h1>an <br>
+                    <h1 class="animate1 inline-block text-green-700">C</h1>ount
+                </span> On, Prices You'll Love <p class="inline-block animate-pulse text-green-700">!</p>
+            </h1>
             <p class="text-center py-8 text-gray-500">Shop your daily essentials at unbeatable prices. From fresh
                 produce to pantry <br> staples, we've got you covered every day!</p>
             <div class="w-full flex justify-center">
@@ -126,88 +146,97 @@
                     <div class="flex flex-col lg:flex-row pt-10 items-center gap-6">
                         <!-- product banner -->
                         <div class="bg-gradient-to-br from-accent to-white rounded-lg pl-9 lg:w-[600px] pt-10 w-full">
-                                <div class="w-72">
-                                    <h3 class="text-white text-2xl font-semibold">30% off</h3>
+                            <div class="w-72">
+                                <h3 class="text-white text-2xl font-semibold">30% off</h3>
                                 <p class="py-6">Discover a world of treats, toys, and essentials handpicked for</p>
                                 <button class="btn bg-white ">Buy Now</button>
-                                </div>
-                                <div class="flex justify-end -mt-16">
-                                    <img class="pr-3" src="c2-assets/vegetable-offer.png" alt="">
-                                </div>
                             </div>
+                            <div class="flex justify-end -mt-16">
+                                <img class="pr-3" src="c2-assets/vegetable-offer.png" alt="">
+                            </div>
+                        </div>
                         <!-- product item -->
                         <div class="grid lg:grid-cols-3 grid-cols-2 justify-between gap-6 w-full">
                             <div class="bg-white rounded-xl p-2 lg:p-4 md:p-4 flex gap-3 items-center">
                                 <img class="bg-[#EFEBE3] lg:p-2 md:p-2 rounded-lg" src="c2-assets/onion.png" alt="">
-                               <div>
-                                <i class="fa-solid fa-star text-yellow-400"></i> <span class="text-gray-500">4.5</span>
-                                <h5 class="font-semibold">Onion 1 KG</h5>
-                                <p>$39.99</p>
-                               </div>
+                                <div>
+                                    <i class="fa-solid fa-star text-yellow-400 lg:text-base text-[12px]"></i> <span
+                                        class="text-gray-500 lg:text-base text-[12px]">4.5</span>
+                                    <h5 class="font-semibold text-[13px] lg:text-base">Onion 1 KG</h5>
+                                    <p class="lg:text-base text-[12px]">$39.99</p>
+                                </div>
                             </div>
                             <div class="bg-white rounded-xl p-2 lg:p-4 md:p-4 flex gap-3 items-center">
                                 <img class="bg-[#EFEBE3] lg:p-2 md:p-2 rounded-lg" src="c2-assets/tomato.png" alt="">
-                               <div>
-                                <i class="fa-solid fa-star text-yellow-400"></i> <span class="text-gray-500">4.5</span>
-                                <h5 class="font-semibold">Tomato 500 g</h5>
-                                <p>$39.99</p>
-                               </div>
+                                <div>
+                                    <i class="fa-solid fa-star text-yellow-400 lg:text-base text-[12px]"></i> <span
+                                        class="text-gray-500 lg:text-base text-[12px]">4.5</span>
+                                    <h5 class="font-semibold text-[13px] lg:text-base">Tomato 500 g</h5>
+                                    <p class="lg:text-base text-[12px]">$39.99</p>
+                                </div>
                             </div>
                             <div class="bg-white rounded-xl p-2 lg:p-4 md:p-4 flex gap-3 items-center">
                                 <img class="bg-[#EFEBE3] lg:p-2 md:p-2 rounded-lg" src="c2-assets/potato.png" alt="">
-                               <div>
-                                <i class="fa-solid fa-star text-yellow-400"></i> <span class="text-gray-500">4.5</span>
-                                <h5 class="font-semibold">Potato 1 KG</h5>
-                                <p>$39.99</p>
-                               </div>
+                                <div>
+                                    <i class="fa-solid fa-star text-yellow-400 lg:text-base text-[12px]"></i> <span
+                                        class="text-gray-500 lg:text-base text-[12px]">4.5</span>
+                                    <h5 class="font-semibold text-[13px] lg:text-base">Potato 1 KG</h5>
+                                    <p class="lg:text-base text-[12px]">$39.99</p>
+                                </div>
                             </div>
                             <div class="bg-white rounded-xl p-2 lg:p-4 md:p-4 flex gap-3 items-center">
                                 <img class="bg-[#EFEBE3] lg:p-2 md:p-2 rounded-lg" src="c2-assets/tomato.png" alt="">
-                               <div>
-                                <i class="fa-solid fa-star text-yellow-400"></i> <span class="text-gray-500">4.5</span>
-                                <h5 class="font-semibold">Tomato 500 g</h5>
-                                <p>$39.99</p>
-                               </div>
+                                <div>
+                                    <i class="fa-solid fa-star text-yellow-400 lg:text-base text-[12px]"></i> <span
+                                        class="text-gray-500 lg:text-base text-[12px]">4.5</span>
+                                    <h5 class="font-semibold text-[13px] lg:text-base">Tomato 500 g</h5>
+                                    <p class="lg:text-base text-[12px]">$39.99</p>
+                                </div>
                             </div>
                             <div class="bg-white rounded-xl p-2 lg:p-4 md:p-4 flex gap-3 items-center">
                                 <img class="bg-[#EFEBE3] lg:p-2 md:p-2 rounded-lg" src="c2-assets/onion.png" alt="">
-                               <div>
-                                <i class="fa-solid fa-star text-yellow-400"></i> <span class="text-gray-500">4.5</span>
-                                <h5 class="font-semibold">Onion 1 KG</h5>
-                                <p>$39.99</p>
-                               </div>
+                                <div>
+                                    <i class="fa-solid fa-star text-yellow-400 lg:text-base text-[12px]"></i> <span
+                                        class="text-gray-500 lg:text-base text-[12px]">4.5</span>
+                                    <h5 class="font-semibold text-[13px] lg:text-base">Onion 1 KG</h5>
+                                    <p class="lg:text-base text-[12px]">$39.99</p>
+                                </div>
                             </div>
                             <div class="bg-white rounded-xl p-2 lg:p-4 md:p-4 flex gap-3 items-center">
                                 <img class="bg-[#EFEBE3] lg:p-2 md:p-2 rounded-lg" src="c2-assets/tomato.png" alt="">
-                               <div>
-                                <i class="fa-solid fa-star text-yellow-400"></i> <span class="text-gray-500">4.5</span>
-                                <h5 class="font-semibold">Tomato 500 g</h5>
-                                <p>$39.99</p>
-                               </div>
+                                <div>
+                                    <i class="fa-solid fa-star text-yellow-400 lg:text-base text-[12px]"></i> <span
+                                        class="text-gray-500 lg:text-base text-[12px]">4.5</span>
+                                    <h5 class="font-semibold text-[13px] lg:text-base">Tomato 500 g</h5>
+                                    <p class="lg:text-base text-[12px]">$39.99</p>
+                                </div>
                             </div>
                             <div class="bg-white rounded-xl p-2 lg:p-4 md:p-4 flex gap-3 items-center">
                                 <img class="bg-[#EFEBE3] lg:p-2 md:p-2 rounded-lg" src="c2-assets/onion.png" alt="">
-                               <div>
-                                <i class="fa-solid fa-star text-yellow-400"></i> <span class="text-gray-500">4.5</span>
-                                <h5 class="font-semibold">Onion 1 KG</h5>
-                                <p>$39.99</p>
-                               </div>
+                                <div>
+                                    <i class="fa-solid fa-star text-yellow-400 lg:text-base text-[12px]"></i> <span
+                                        class="text-gray-500 lg:text-base text-[12px]">4.5</span>
+                                    <h5 class="font-semibold text-[13px] lg:text-base">Onion 1 KG</h5>
+                                    <p class="lg:text-base text-[12px]">$39.99</p>
+                                </div>
                             </div>
                             <div class="bg-white rounded-xl p-2 lg:p-4 md:p-4 flex gap-3 items-center">
                                 <img class="bg-[#EFEBE3] lg:p-2 md:p-2 rounded-lg" src="c2-assets/potato.png" alt="">
-                               <div>
-                                <i class="fa-solid fa-star text-yellow-400"></i> <span class="text-gray-500">4.5</span>
-                                <h5 class="font-semibold">Potato 1 KG</h5>
-                                <p>$39.99</p>
-                               </div>
+                                <div>
+                                    <i class="fa-solid fa-star text-yellow-400 lg:text-base text-[12px]"></i> <span
+                                        class="text-gray-500 lg:text-base text-[12px]">4.5</span>
+                                    <h5 class="font-semibold text-[13px] lg:text-base">Potato 1 KG</h5>
+                                    <p class="lg:text-base text-[12px]">$39.99</p>
+                                </div>
                             </div>
                             <div class="bg-white hidden rounded-xl p-2 lg:p-4 md:p-4 lg:flex gap-3 items-center">
                                 <img class="bg-[#EFEBE3] lg:p-2 md:p-2 rounded-lg" src="c2-assets/potato.png" alt="">
-                               <div>
-                                <i class="fa-solid fa-star text-yellow-400"></i> <span class="text-gray-500">4.5</span>
-                                <h5 class="font-semibold">Potato 1 KG</h5>
-                                <p>$39.99</p>
-                               </div>
+                                <div>
+                                    <i class="fa-solid fa-star text-yellow-400 lg:text-base text-[12px]"></i> <span
+                                        class="text-gray-500 lg:text-base text-[12px]">4.5</span>
+                                    <h5 class="font-semibold text-[13px] lg:text-base">Potato 1 KG</h5>
+                                    <p class="lg:text-base text-[12px]">$39.99</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -223,100 +252,136 @@
                         <img class="rounded-full w-auto h-20" src="c2-assets/user2.png" alt="">
                         <div class="">
                             <p class="font-semibold text-[20px]">john Doe</p>
-                        <p class="text-green-500">Instructor</p>
-                        <div class="rating">
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 h-4 mt-1" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 h-4 mt-1" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 h-4 mt-1" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 h-4 mt-1" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 h-4 mt-1" />
-                          </div>
+                            <p class="text-green-500">Instructor</p>
+                            <i class="fa-solid fa-star text-orange-400 lg:text-base text-[12px]"></i>
+                            <i class="fa-solid fa-star text-orange-400 lg:text-base text-[12px]"></i>
+                            <i class="fa-solid fa-star text-orange-400 lg:text-base text-[12px]"></i>
+                            <i class="fa-solid fa-star text-orange-400 lg:text-base text-[12px]"></i>
+                            <i class="fa-solid fa-star text-orange-400 lg:text-base text-[12px]"></i>
                         </div>
                     </div>
-                    <p class="text-gray-500 pt-4">I was honestly surprised by the freshness of the vegetables! Every item I received was farm-fresh, vibrant, and full of flavor. Unlike other stores, the quality remained consistent with each order. I can now cook healthy meals without worrying about the quality of my ingredients. Highly recommended for anyone who values fresh, organic produce!</p>
+                    <p class="text-gray-500 pt-4">I was honestly surprised by the freshness of the vegetables! Every
+                        item I received was farm-fresh, vibrant, and full of flavor. Unlike other stores, the quality
+                        remained consistent with each order. I can now cook healthy meals without worrying about the
+                        quality of my ingredients. Highly recommended for anyone who values fresh, organic produce!</p>
                 </div>
                 <div class="p-8 bg-[#EFEBE3] flex flex-col rounded-xl">
                     <div class="flex space-x-4">
                         <img class="rounded-full w-auto h-20" src="c2-assets/user3.png" alt="">
                         <div class="">
                             <p class="font-semibold text-[20px]">Daniel M.</p>
-                        <p class="text-green-500">Banker</p>
-                        <div class="rating">
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 h-4 mt-1" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 h-4 mt-1" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 h-4 mt-1" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 h-4 mt-1" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 h-4 mt-1" />
-                          </div>
+                            <p class="text-green-500">Banker</p>
+                            <i class="fa-solid fa-star text-orange-400 lg:text-base text-[12px]"></i>
+                            <i class="fa-solid fa-star text-orange-400 lg:text-base text-[12px]"></i>
+                            <i class="fa-solid fa-star text-orange-400 lg:text-base text-[12px]"></i>
+                            <i class="fa-solid fa-star text-orange-400 lg:text-base text-[12px]"></i>
+                            <i class="fa-solid fa-star text-orange-400 lg:text-base text-[12px]"></i>
                         </div>
                     </div>
-                    <p class="text-gray-500 pt-4">Super fast delivery and excellent service! I placed my order in the morning, and by the afternoon, everything was neatly packed and delivered to my doorstep. The packaging was secure, ensuring that nothing got damaged. The delivery personnel were also very polite and professional. I've never had such a smooth online grocery shopping experience before—definitely my go-to store from now on!</p>
+                    <p class="text-gray-500 pt-4">Super fast delivery and excellent service! I placed my order in the
+                        morning, and by the afternoon, everything was neatly packed and delivered to my doorstep. The
+                        packaging was secure, ensuring that nothing got damaged. The delivery personnel were also very
+                        polite and professional. I've never had such a smooth online grocery shopping experience
+                        before—definitely my go-to store from now on!</p>
                 </div>
                 <div class="p-8 bg-[#EFEBE3] flex flex-col rounded-xl">
                     <div class="flex space-x-4">
                         <img class="rounded-full w-auto h-20" src="c2-assets/user1.png" alt="">
                         <div class="">
                             <p class="font-semibold text-[20px]">Elon Mask</p>
-                        <p class="text-green-500">Business Man</p>
-                        <div class="rating">
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 h-4 mt-1" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 h-4 mt-1" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 h-4 mt-1" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 h-4 mt-1" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 h-4 mt-1" />
-                          </div>
+                            <p class="text-green-500">Business Man</p>
+                            <i class="fa-solid fa-star text-orange-400 lg:text-base text-[12px]"></i>
+                            <i class="fa-solid fa-star text-orange-400 lg:text-base text-[12px]"></i>
+                            <i class="fa-solid fa-star text-orange-400 lg:text-base text-[12px]"></i>
+                            <i class="fa-solid fa-star text-orange-400 lg:text-base text-[12px]"></i>
+                            <i class="fa-solid fa-star text-orange-400 lg:text-base text-[12px]"></i>
                         </div>
                     </div>
-                    <p class="text-gray-500 pt-4">I love how this store offers a wide variety of organic and healthy products at such reasonable prices. Whether I need fresh vegetables, pantry staples, or organic snacks, I find everything in one place. Plus, the discounts and special deals make grocery shopping so much more affordable. I no longer have to hop between multiple stores—this is now my one-stop solution for all my grocery needs!</p>
+                    <p class="text-gray-500 pt-4">I love how this store offers a wide variety of organic and healthy
+                        products at such reasonable prices. Whether I need fresh vegetables, pantry staples, or organic
+                        snacks, I find everything in one place. Plus, the discounts and special deals make grocery
+                        shopping so much more affordable. I no longer have to hop between multiple stores—this is now my
+                        one-stop solution for all my grocery needs!</p>
                 </div>
-                
+
             </div>
         </section>
         <!-- Arrival & Offers -->
-         <section class="mt-16 container mx-auto px-2">
-            <h2 class="text-accent font-semibold text-3xl">Arrival & Offers</h2>
-            <div class="flex gap-10 flex-col lg:flex-row mt-10">
-                <div class="lg:py-9 py-5 pl-5 lg:gap-20 lg:pl-20 bg-[#115414] rounded-xl flex items-center">
-                    <div>
-                        <img src="c2-assets/dawat-logo.png" alt="">
-                        <button class="my-8 lg:px-10 p-3 lg:py-3 text-white bg-[#63B76D] rounded-lg text-[12px] lg:text-base">Cook Exotic Dishes</button>
-                        <p class="text-white lg:text-4xl text-lg">UP to <strong>20% OFF</strong></p>
+        <section class="mt-16 container mx-auto px-2">
+            <h2 class="text-accent font-semibold text-3xl text-center lg:text-left">Arrival & Offers</h2>
+            <div class="flex flex-col lg:flex-row gap-10 mt-10">
+
+
+                <div class="w-full flex flex-row xl:pl-7 justify-center items-center py-5 pl-5 bg-[#115414] rounded-xl gap-5 lg:pl-10">
+                    <div class="text-center lg:text-left lg:h-max">
+                        <img class="lg:-ml-7" src="c2-assets/dawat-logo.png" alt="">
+                        <button class="my-4 lg:my-8 lg:px-3 px-2 py-2 text-white bg-[#63B76D] rounded-lg text-sm lg:text-base">
+                            Cook Exotic Dish
+                        </button>
+                        <p class="text-white text-lg xl:text-4xl lg:text-2xl">UP to <strong>20% OFF</strong></p>
                     </div>
-                    <div>
+                    <div class="h-max">
                         <img src="c2-assets/dawat-mock-up.png" alt="">
                     </div>
                 </div>
-                <div class="lg:py-9 lg:gap-20 py-5 px-5 lg:px-20 bg-[#102861] rounded-xl flex items-center justify-between">
-                    <div>
+
+
+                <div class="w-full xl:w-[80%] flex xl:pl-7 justify-center items-center py-5 pl-5 bg-[#102861] rounded-xl gap-10 lg:pl-10 xl:gap-20 md:pr-7 md:justify-between md:px-32">
+                    <div class="text-center lg:text-left lg:h-max">
                         <img src="c2-assets/india-gate-logo.png" alt="">
-                        <button class="my-8 lg:px-10 p-3 lg:py-3 text-white bg-[#2A4D97] rounded-lg">World's No.1 Rice</button>
-                        <p class="text-white lg:text-4xl text-lg">UP to <strong>40% OFF</strong></p>
+                        <button class="my-4 lg:my-8 lg:px-3 px-2 py-2 text-white bg-[#2A4D97] rounded-lg text-sm lg:text-base">
+                            Cook Exotic Dish
+                        </button>
+                        <p class="text-white text-lg xl:text-4xl lg:text-2xl">UP to <strong>20% OFF</strong></p>
                     </div>
-                    <div>
+                    <div class="h-max md:pr-32">
                         <img src="c2-assets/india-gate-mock-up.png" alt="">
                     </div>
                 </div>
             </div>
-         </section>
+        </section>
+        
     </main>
-    <footer class="bg-accent">
-         <!-- Grocery news -->
-         <section class="container mx-auto px-2">
-            <div class="bg-[#EFEBE3] py-14 lg:px-24 px-7 flex flex-col lg:flex-row items-center lg:gap-36">
-                <div class="">
-                    <img src="c2-assets/vegetable-busket.png" alt="">
-                </div>
-                <div>
-                    <h2 class="font-bold text-2xl text-center text-accent mt-6 lg:text-start lg:text-black">Get Grocery News!</h2>
-                    <p class="text-gray-500 pt-5 text-center lg:text-start">Exclusive training tips, ticks, product deals and more.</p>
-                    <input type="text" placeholder="Enter email...." class="py-4 px-5 rounded-xl w-full my-7">
-                    <div class="text-center lg:text-start">
-                        <button class="py-3 px-7 bg-accent text-white rounded-lg ">Subscribe</button>
-                    </div>
+    <!-- Grocery news -->
+    <section class="relative lg:-mb-[230px] -mb-[305px] container mx-auto px-2 mt-16">
+        <div class="bg-[#EFEBE3] py-14 lg:px-24 px-7 flex flex-col lg:flex-row items-center lg:gap-36  rounded-xl">
+            <div class="">
+                <img src="c2-assets/vegetable-busket.png" alt="">
+            </div>
+            <div>
+                <h2 class="font-bold text-2xl text-center text-accent mt-6 lg:text-start lg:text-black">Get Grocery
+                    News!</h2>
+                <p class="text-gray-500 pt-5 text-center lg:text-start">Exclusive training tips, ticks, product
+                    deals and more.</p>
+                <input type="text" placeholder="Enter email...." class="py-4 px-5 rounded-xl w-full my-7">
+                <div class="text-center lg:text-start">
+                    <button class="py-3 px-7 bg-accent hover:bg-green-500 transition text-white rounded-lg ">Subscribe</button>
                 </div>
             </div>
-          </section>
-          
+        </div>
+    </section>
+    <footer class="bg-accent pt-[230px] pb-12">
+        <div class="px-2 lg:pt-12 pt-32 lg:flex container mx-auto justify-between items-end">
+            <div class="lg:w-[426px]">
+                <img src="c2-assets/logo-footer.png" alt="">
+                <p class="text-white mt-5">Discover a world of treats, toys, and essentials handpicked for your furry
+                    friends</p>
+            </div>
+            <div class="flex flex-col gap-5 text-white mt-9">
+                <a href="">Product</a>
+                <a href="">Services</a>
+                <a href="">Contact Us</a>
+            </div>
+            <div class="text-white mt-9">
+                <h3>Follow Us</h3>
+                <div class="mt-5 flex gap-7 text-[24px]">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 
